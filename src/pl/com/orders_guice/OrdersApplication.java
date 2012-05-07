@@ -2,9 +2,11 @@ package pl.com.orders_guice;
 
 import java.util.List;
 
-import com.google.inject.Module;
+import pl.com.orders_guice.module.OrdersModule;
 
 import roboguice.application.RoboApplication;
+
+import com.google.inject.Module;
 
 public class OrdersApplication extends RoboApplication {
 

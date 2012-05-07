@@ -1,7 +1,10 @@
-package pl.com.orders_guice.articles;
+package pl.com.orders_guice.module;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import pl.com.orders_guice.articles.Article;
+import pl.com.orders_guice.articles.ArticleService;
 
 public class ArticleServiceImpl implements ArticleService {
 

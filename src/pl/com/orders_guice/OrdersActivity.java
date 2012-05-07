@@ -16,17 +16,17 @@ import com.googlecode.androidannotations.annotations.ViewById;
 public class OrdersActivity extends RoboActivity {
 
 	@ViewById
-	ListView listView;
+	protected ListView listView;
 	
 	@Inject
-	Context context;
+	protected Context context;
 	
 	@Inject
-	ArticleService articleFinder;
+	protected ArticleService articles;
 	
 	@AfterViews
-	void afterViews() {
-		this.listView.setAdapter(new ArrayAdapter<Article>(this.context, android.R.layout.test_list_item, this.articleFinder.list()));
+	protected void afterViews() {
+		listView.setAdapter(new ArrayAdapter<Article>(context, android.R.layout.test_list_item, articles.list()));
 	}
 	
 }
